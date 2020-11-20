@@ -61,6 +61,9 @@ export default function Home() {
               </p>
             </a>
           </Link>
+          <a href="https://github.com/otovo/web/compare/rix1/test-rewrites?expand=1">
+            <p>For reference: Link to my changes to the Otovo-logo Github</p>
+          </a>
 
           <Link href="/about">
             <a className={styles.card}>
