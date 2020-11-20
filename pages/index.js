@@ -35,7 +35,14 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Rewrite demo time!</h1>
 
-        <p className={styles.description}>Here's my next.config.js</p>
+        <p className={styles.description}>
+          This application has two routes,
+          <Link href="/">/ (home)</Link> and{" "}
+          <Link href="/contact">
+            <a>/contact</a>
+          </Link>
+          . Here's my next.config.js:
+        </p>
         <pre className={styles.code}>{code}</pre>
 
         <div className={styles.grid}>
