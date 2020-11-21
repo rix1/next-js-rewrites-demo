@@ -1,4 +1,17 @@
 module.exports = {
+  async headers() {
+    return [
+      {
+        source: "/ssr",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "Cache-Control: s-maxage=1, stale-while-revalidate",
+          },
+        ],
+      },
+    ];
+  },
   async rewrites() {
     return [
       // we need to define a no-op rewrite to trigger checking
